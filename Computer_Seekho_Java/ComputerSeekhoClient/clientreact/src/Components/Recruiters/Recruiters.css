@@ -1,0 +1,79 @@
+/* General styling for the section */
+.recruiters-main-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Section title */
+.recruiters-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for recruiters */
+.recruiters-main-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Individual recruiter card */
+.recruiters-main-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for recruiter card */
+.recruiters-main-card:hover {
+    transform: scale(1.05);
+}
+
+/* Recruiter logo styling */
+.recruiters-main-logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/* Recruiter name styling */
+.recruiters-main-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* "See More" button styling */
+.recruiters-see-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for "See More" button */
+.recruiters-see-more-button:hover {
+    background-color: #d62828;
+}

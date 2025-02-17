@@ -1,0 +1,11 @@
+{
+  "welcome_message": "हमारे एप्लिकेशन में आपका स्वागत है!",
+  "login_to": "लॉगिन करें",
+  "app_name": "मेरा ऐप",
+  "username": "यूजरनेम",
+  "password": "पासवर्ड",
+  "login": "लॉगिन",
+  "invalid_credentials": "अमान्य क्रेडेंशियल्स",
+  "login_failed": "लॉगिन विफल",
+  "login_successful": "सफलतापूर्वक लॉगिन हुआ"
+}

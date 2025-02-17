@@ -1,0 +1,105 @@
+
+.placements-container {
+    margin-top: 100px;
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+    
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+.placement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.placement-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    width: 270px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.placement-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    border-color: #71b6ff;
+}
+
+.student-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #f8ad67;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.placement-card:hover .student-image {
+    transform: scale(1.1);
+    border-color: #ff3300;
+}
+
+
+.placement-info {
+    padding: 10px;
+}
+
+
+.student-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+
+.recruiter-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+.no-placements {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .placement-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .placement-card {
+        width: 90%;
+    }
+}

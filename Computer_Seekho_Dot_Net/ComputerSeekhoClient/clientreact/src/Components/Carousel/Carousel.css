@@ -1,0 +1,117 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+    /* Adjust for navbar */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 800px;
+    object-fit: scale-down;
+    transition: opacity 0.5s ease-in-out;
+    /* Fade effect */
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Caption hover effect */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+    /* Hover effect */
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker on hover */
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Dots for navigation */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #003366;
+    /* Active dot color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-image {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel -image {
+        max-height: 200px;
+    }
+
+    .carousel-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .caption {
+        font-size: 14px;
+        /* Smaller caption on mobile */
+    }
+}

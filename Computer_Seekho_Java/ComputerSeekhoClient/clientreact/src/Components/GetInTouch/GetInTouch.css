@@ -1,0 +1,25 @@
+.get-in-touch-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+    /* Adjust this value to account for the height of the fixed header */
+}
+
+.map {
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .get-in-touch-container {
+        padding: 30px 15px;
+        /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .get-in-touch-container {
+        padding: 20px 10px;
+        /* Further reduced padding for extra small screens */
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Received</h1>
+        </div>
+        <div class="content">
+            <p>Dear ${studentName},</p>
+            <p>Acknowledgement of fees payment of ${paymentAmount}.</p>
+            <p>Payment Details:</p>
+            <p>Payment ID: ${paymentID}</p>
+            <p>Payment Amount: ${paymentAmount}</p>
+            <p>Payment Mode: ${paymentMethod}</p>
+            <p>Payment Date: ${paymentDate}</p>
+            <p>If you require any additional information or support, feel free to reach out to us at any time.</p>
+            <p>Thanking you.</p>
+            <p>Computer Seekho Staff</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025@Computer Seekho. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

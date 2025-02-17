@@ -1,0 +1,225 @@
+/* Add the keyframes for animation */
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f2f2f1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/* Apply the animation to the image */
+.login-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInTop 1s ease-out forwards;
+  padding: 0;
+  margin: 0;
+  max-width: 45%; /* Reduce width */
+}
+
+/* Apply the animation to the form */
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: slideInBottom 1s ease-out forwards;
+  padding: 0;
+  margin: 0;
+  max-width: 55%; /* Reduce width */
+}
+
+/* Container adjustments */
+.login-container {
+  display: flex; /* Use flexbox instead of grid */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  padding: 20px 0;
+  background-color: #1A1A1D;
+  gap: 10px; /* Small gap to reduce spacing */
+}
+
+/* Image styles */
+.login-image {
+  width: 100%;
+  max-width: 350px; /* Adjust size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.login-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #A64D79;
+}
+
+.highlight {
+  color: #ebc1df;
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 450px; /* Adjust size */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group .input-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group .input-icon input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #3B1C32;
+  width: 100%;
+}
+
+.input-group .input-icon svg {
+  color: #6A1E55;
+}
+
+.input-group .input-icon:focus-within {
+  border-color: #A64D79;
+  box-shadow: 0 0 5px rgba(166, 77, 121, 0.3);
+}
+
+/* Button styles */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #6A1E55;
+  background-color: #6A1E55;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button .button-icon {
+  font-size: 1.2rem;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #6A1E55;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .login-image-container,
+  .login-form-container {
+    max-width: 100%;
+  }
+
+  .login-image {
+    max-width: 200px;
+  }
+
+  .login-form {
+    max-width: 300px;
+  }
+}
+
+
+/* View password icon */
+.view-password-icon {
+  cursor: pointer;
+  color: #6A1E55;
+  transition: color 0.3s ease;
+}
+
+.view-password-icon:hover {
+  color: #A64D79;
+}
+
+
+/* Language switcher styles */
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.language-switcher button {
+  background-color: #6A1E55; /* Primary color */
+  color: white;
+  border: none;
+  font-size: 0.9rem; /* Smaller text */
+  font-weight: bold;
+  padding: 6px 12px; /* Smaller button */
+  border-radius: 20px; /* Rounded look */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.language-switcher button:hover {
+  background-color: #A64D79; /* Lighter shade on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}

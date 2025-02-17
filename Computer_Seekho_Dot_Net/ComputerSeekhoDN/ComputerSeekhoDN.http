@@ -1,0 +1,6 @@
+@ComputerSeekhoDN_HostAddress = http://localhost:5230
+
+GET {{ComputerSeekhoDN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

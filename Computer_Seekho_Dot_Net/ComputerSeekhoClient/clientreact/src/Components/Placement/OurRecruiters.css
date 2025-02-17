@@ -1,0 +1,97 @@
+/* RecruitersStyles.css */
+
+/* General styling for the section */
+.recruiters-sections {
+    padding: 60px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Section title */
+.recruiters-titles {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.recruiters-subtitles {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Flexbox layout for recruiters */
+.recruiters-grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Set to 4 columns */
+    gap: 20px;
+    /* Increased gap between boxes */
+    justify-items: center;
+    align-items: center;
+}
+
+/* Individual recruiter card */
+.recruiter-cards {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    /* Fixed width for consistency */
+    height: 300px;
+    /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for recruiter card */
+.recruiter-cards:hover {
+    transform: scale(1.05);
+}
+
+/* Recruiter logo styling */
+.recruiter-logos {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/* Recruiter name styling */
+.recruiter-names {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .recruiters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recruiters-grid {
+        grid-template-columns: 1fr;
+        /* 1 column on very small screens */
+    }
+}
+
+/* Loading and error messages */
+.recruiters-loading,
+.recruiters-error {
+    font-size: 1.2rem;
+    color: #e63946;
+    /* Error color */
+}

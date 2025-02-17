@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    /* Adjusted padding for smaller screens */
+    font-size: 14px;
+    /* Adjusted font size for smaller screens */
+  }
+}
+
+.btn {
+  background-color: #fff;
+  color: #212121;
+  padding: 10px 20px;
+  /* Reduced padding */
+  font-size: 16px;
+  /* Reduced font size */
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  margin-left: 10px;
+}
+
+.dark-btn {
+  background-color: #212EA0;
+  /* Blue color for the "See more" button */
+  color: #fff;
+}
+
+.dark-btn:hover {
+  background-color: #4A54C2;
+  /* Darker blue on hover */
+}
+
+/* More specific responsive adjustments for smaller devices */
+@media (max-width: 480px) {
+  .btn {
+    padding: 6px 12px;
+    /* Adjusted padding for extra small screens */
+    font-size: 12px;
+    /* Adjusted font size for extra small screens */
+  }
+}

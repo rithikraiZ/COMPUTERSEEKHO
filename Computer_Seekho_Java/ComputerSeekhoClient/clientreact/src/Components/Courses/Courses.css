@@ -1,0 +1,38 @@
+.courses {
+    margin: 80px auto;
+    width: 90%;
+}
+
+.course {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensure the caption does not overflow */
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.7);
+    /* Slightly darker for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.course:hover .caption {
+    opacity: 1;
+    /* Show caption on hover */
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+}

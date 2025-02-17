@@ -1,0 +1,46 @@
+.container {
+    padding: 20px;
+    /* Default padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        /* Reduced padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px;
+        /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 20px;
+        /* Adjust subtitle size */
+    }
+
+    /* Adjust course and campus life sections */
+    .courses,
+    .campus-life {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        /* Further reduced padding for extra small screens */
+    }
+
+    h1 {
+        font-size: 20px;
+        /* Smaller heading size for mobile */
+    }
+
+    h2 {
+        font-size: 18px;
+        /* Smaller subtitle size for mobile */
+    }
+}

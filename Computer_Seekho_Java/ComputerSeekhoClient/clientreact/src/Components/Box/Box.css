@@ -1,0 +1,30 @@
+.box-image {
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .box-image {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 992px) {
+  .box-image {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-image {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .box-image {
+    padding: 10px;
+  }
+}

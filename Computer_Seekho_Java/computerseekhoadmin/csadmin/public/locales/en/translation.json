@@ -1,0 +1,12 @@
+{
+    "welcome_message": "Welcome to our application!",
+    "login_to": "Login to",
+    "app_name": "My App",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "invalid_credentials": "Invalid credentials",
+    "login_failed": "Login failed",
+    "login_successful": "Login successful"
+  }
+  

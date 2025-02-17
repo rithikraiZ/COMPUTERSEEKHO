@@ -1,0 +1,150 @@
+.faculty-container {
+  padding: 80px 20px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faculty-header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.faculty-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.faculty-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Limit to 4 cards in a row */
+  gap: 20px;
+  justify-content: center;
+}
+
+.faculty-member {
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  width: 280px;
+  /* Fixed width */
+  height: 380px;
+  /* Increased height */
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.faculty-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.faculty-member img {
+  width: 100%;
+  height: 220px;
+  /* Increased image height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.faculty-member h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.faculty-member .position {
+  font-weight: 500;
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .faculty-list {
+    grid-template-columns: repeat(3, 1fr);
+    /* Limit to 3 cards in a row on tablets */
+  }
+
+  .faculty-container {
+    padding: 60px 20px 30px;
+  }
+
+  .faculty-member {
+    width: 260px;
+    /* Reduced width for smaller screens */
+    height: 360px;
+    /* Slightly reduced height */
+  }
+
+  .faculty-member img {
+    height: 200px;
+    /* Adjusted for smaller screens */
+  }
+
+  .faculty-member h2 {
+    font-size: 1.1rem;
+  }
+
+  .faculty-member .position {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faculty-list {
+    grid-template-columns: repeat(2, 1fr);
+    /* Limit to 2 cards in a row on smaller devices */
+  }
+
+  .faculty-member {
+    width: 240px;
+    /* Further reduced width */
+    height: 340px;
+    /* Adjusted height */
+  }
+
+  .faculty-member img {
+    height: 180px;
+    /* Smaller image height */
+  }
+
+  .faculty-member h2 {
+    font-size: 1rem;
+  }
+
+  .faculty-member .position {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faculty-list {
+    grid-template-columns: repeat(1, 1fr);
+    /* Single column on mobile devices */
+  }
+
+  .faculty-member {
+    width: 220px;
+    /* Narrower width for mobile */
+    height: 320px;
+    /* Compact height for mobile */
+  }
+
+  .faculty-member img {
+    height: 160px;
+    /* Image height for smaller screens */
+  }
+
+  .faculty-member h2 {
+    font-size: 0.95rem;
+  }
+
+  .faculty-member .position {
+    font-size: 0.8rem;
+  }
+}

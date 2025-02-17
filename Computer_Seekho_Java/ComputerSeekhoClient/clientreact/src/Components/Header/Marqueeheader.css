@@ -1,0 +1,19 @@
+.marquee-header {
+    width: 100%;
+    background:#FFD700;
+    /* Match the background color of the navbar */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: background-color 0.5s;
+}
+
+.marquee-header.dark {
+    background: #FFB6C1;
+    /* Match the dark background color of the navbar */
+}

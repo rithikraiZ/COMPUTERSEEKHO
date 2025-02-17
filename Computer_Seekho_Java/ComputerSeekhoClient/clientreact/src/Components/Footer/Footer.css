@@ -1,0 +1,109 @@
+/* General styles */
+html,
+body {
+  height: 100%;
+  /* Ensure the body takes full height */
+  margin: 0;
+  /* Remove default margin */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+}
+
+.main-content {
+  flex: 1;
+  /* Allow the main content to grow and fill the space */
+}
+
+/* Footer styles */
+.footer {
+  width: 100vw;
+  background-color: #000;
+  /* Changed to black */
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  align-items: flex-start;
+  /* Align items to the start */
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #bbb;
+  flex-shrink: 0;
+  /* Prevent the footer from shrinking */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    /* Stack sections vertically on smaller screens */
+    align-items: center;
+    /* Center align items */
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    /* Add space between sections */
+    text-align: center;
+    /* Center text in sections */
+  }
+}
